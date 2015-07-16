@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="strs_functions">
+        <item>手机防盗</item>
+        <item>通讯卫士</item>
+        <item>软件管理</item>
+        <item>进程管理</item>
+        <item>高级工具</item>
+        <item>软件设置</item>
+    </string-array>
+
+</resources>

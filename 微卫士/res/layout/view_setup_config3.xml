@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/setup_textView"
+        android:text="SIM卡变更以后:" />
+
+    <TextView
+        style="@style/setup_textView"
+        android:text="报警会把短信发到这个号码上" />
+
+    <EditText
+        android:id="@+id/et_setup3_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/acm_inputbox"
+        android:gravity="center"
+        android:hint="@string/hint_et_setup3_num"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/btn_setup3_selectContactor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/button"
+        android:padding="5dp"
+        android:text="@string/btn_setup3_selectContactor"
+        android:textSize="20sp" />
+
+</LinearLayout>

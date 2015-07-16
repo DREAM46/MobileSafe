@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dream="http://schemas.android.com/apk/res/com.dream.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/title"
+        android:text="进程管理设置" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.dream.mobilesafe.view.SettingItem
+            android:id="@+id/si_task_showSys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            dream:desc_off="@string/show_sys_off"
+            dream:desc_on="@string/show_sys_on"
+            dream:title1="@string/show_sys_title" />
+
+        <com.dream.mobilesafe.view.SlidingToggleButton
+            android:id="@+id/stb_task_showSys"
+            style="@style/slidingBtn"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            dream:sliding_drawable="@drawable/switch_thumb_activited"
+            dream:toggle_bg_off="@drawable/switch_track"
+            dream:toggle_bg_on="@drawable/switch_track_activited" />
+    </RelativeLayout>
+
+</LinearLayout>

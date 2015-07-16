@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp" >
+
+    <ImageView
+        android:id="@+id/iv_task"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:id="@+id/tv_task_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_task"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_task_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_task_name"
+        android:layout_toRightOf="@id/iv_task"
+        android:textColor="#88000000" />
+
+    <CheckBox
+        android:id="@+id/cb_task"
+        style="@style/MyCheckBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:focusable="false" />
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dream="http://schemas.android.com/apk/res/com.dream.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/title"
+        android:text="@string/setting_hint" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.dream.mobilesafe.view.SettingItem
+            android:id="@+id/si_setting_autoupdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            dream:desc_off="@string/autoupdate_off"
+            dream:desc_on="@string/autoupdate_on"
+            dream:title1="@string/autoupdate_title" />
+
+        <com.dream.mobilesafe.view.SlidingToggleButton
+            android:id="@+id/stb_autoUpdate"
+            style="@style/slidingBtn"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            dream:sliding_drawable="@drawable/switch_thumb_activited"
+            dream:toggle_bg_off="@drawable/switch_track"
+            dream:toggle_bg_on="@drawable/switch_track_activited" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="@color/red" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.dream.mobilesafe.view.SettingItem
+            android:id="@+id/si_setting_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            dream:desc_off="@string/address_off"
+            dream:desc_on="@string/address_on"
+            dream:title1="@string/address_title" />
+
+        <com.dream.mobilesafe.view.SlidingToggleButton
+            android:id="@+id/stb_address"
+            style="@style/slidingBtn"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            dream:sliding_drawable="@drawable/switch_thumb_activited"
+            dream:toggle_bg_off="@drawable/switch_track"
+            dream:toggle_bg_on="@drawable/switch_track_activited" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="@color/red" />
+
+    <com.dream.mobilesafe.view.SettingItem1
+        android:id="@+id/si1_selectDlgBg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        dream:title="@string/si1_selectDlgBg" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="@color/red" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.dream.mobilesafe.view.SettingItem
+            android:id="@+id/si_setting_openBlackNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            dream:desc_off="@string/openBlackNum_off"
+            dream:desc_on="@string/openBlackNum_on"
+            dream:title1="@string/openBlackNum_title" />
+
+        <com.dream.mobilesafe.view.SlidingToggleButton
+            android:id="@+id/stb_openBlackNum"
+            style="@style/slidingBtn"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            dream:sliding_drawable="@drawable/switch_thumb_activited"
+            dream:toggle_bg_off="@drawable/switch_track"
+            dream:toggle_bg_on="@drawable/switch_track_activited" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="@color/red" />
+
+</LinearLayout>

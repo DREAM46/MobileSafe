@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dream="http://schemas.android.com/apk/res/com.dream.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/title"
+        android:text="@string/findlost_title" />
+
+    <com.dream.mobilesafe.view.FindLostItem
+        android:id="@+id/fi_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        dream:title="@string/tv_lf_num" />
+
+    <com.dream.mobilesafe.view.FindLostItem
+        android:id="@+id/fi_configed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        dream:title="@string/tv_lf_configed" />
+
+    <Button
+        android:id="@+id/btn_lf_setup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/acm_inputbox"
+        android:gravity="center"
+        android:text="@string/btn_lf_setup" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/gray"
+        android:text="@string/tv_lf_introducation" />
+
+    <TextView
+        style="@style/setup_textView1"
+        android:text="@string/setup_function1" />
+
+ 
+
+    <TextView
+        style="@style/setup_textView1"
+        android:text="@string/setup_function3" />
+
+
+
+</LinearLayout>

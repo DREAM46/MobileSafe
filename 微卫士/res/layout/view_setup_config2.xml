@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dream="http://schemas.android.com/apk/res/com.dream.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/setup_textView"
+        android:text="通过绑定SIM卡：" />
+
+    <TextView
+        style="@style/setup_textView"
+        android:text="下次重启手机时，若发现SIM卡发生变化，则会发送报警短信" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.dream.mobilesafe.view.SettingItem
+            android:id="@+id/si_setup2_sim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            dream:desc_off="@string/setup_sim_off"
+            dream:desc_on="@string/setup_sim_on"
+            dream:title1="@string/setup_sim_title" />
+
+        <CheckBox
+            android:id="@+id/cb_sim"
+            style="@style/MyCheckBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dream="http://schemas.android.com/apk/res/com.dream.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/title"
+        android:text="@string/autils_title" />
+
+    <com.dream.mobilesafe.view.AUtilsItem
+        android:id="@+id/au_queyNum"
+        style="@style/Ai_auntils"
+        dream:drawableLeft="@drawable/query"
+        dream:title="@string/title_au_queryNum" />
+
+    <com.dream.mobilesafe.view.AUtilsItem
+        android:id="@+id/au_backupSms"
+        style="@style/Ai_auntils"
+        dream:drawableLeft="@drawable/backup_sms"
+        dream:title="@string/title_au_backupSms" />
+
+    <ProgressBar
+        android:id="@+id/pb_backup"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:max="100"
+        android:progress="0" />
+
+    <com.dream.mobilesafe.view.AUtilsItem
+        android:id="@+id/au_reductSms"
+        style="@style/Ai_auntils"
+        dream:drawableLeft="@drawable/reduction_sms"
+        dream:title="@string/title_au_reductSms" />
+
+    <ProgressBar
+        android:id="@+id/pb_restore"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:max="100"
+        android:progress="0" />
+
+</LinearLayout>

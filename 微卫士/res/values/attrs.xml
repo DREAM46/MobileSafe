@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SettinItem">
+        <attr name="title1" format="string" />
+        <attr name="desc_on" format="string" />
+        <attr name="desc_off" format="string" />
+        <attr name="drawableLeft" format="string" />
+    </declare-styleable>
+    <declare-styleable name="SlidingSettinItem">
+        <attr name="isCheck" format="boolean" />
+        <attr name="toggle_bg_on" format="reference" />
+        <attr name="toggle_bg_off" format="reference" />
+        <attr name="sliding_drawable" format="reference" />
+    </declare-styleable>
+
+</resources>

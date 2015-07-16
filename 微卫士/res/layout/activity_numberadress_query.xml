@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/title"
+        android:text="@string/title_numberaddress_query" />
+
+    <EditText
+        android:id="@+id/et_numberaddress_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/acm_inputbox"
+        android:gravity="center"
+        android:hint="输入电话号码"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/tv_result_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="归属地:"
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+
+</LinearLayout>
